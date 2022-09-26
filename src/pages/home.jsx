@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import * as React from "react";
 //import BottomNavigation from "./nav";
 
-import { Index } from "./content/home";
+import { Index } from "./content";
 import About from "./content/about";
 import Contact from "./content/contact";
 import Projects from "./content/projects";
