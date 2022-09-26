@@ -11,6 +11,10 @@ html {
   background-color: transparent;
   animation: fadeIn 2s;
 }
+.container {
+  background-color: transparent;
+  animation: fadeIn 2s;
+}
 @keyframes fadeOut {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -33,6 +37,7 @@ code {
     monospace;
     color:rgb(168, 194, 221)
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;

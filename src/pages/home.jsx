@@ -16,7 +16,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import AboutIcon from "@mui/icons-material/PersonPin";
 import ProjectsIcon from "@mui/icons-material/Filter";
 import { useState } from "react";
-
+import Footer from './content/footer'
 // INLINE STYLES
 const styles = {
   div: {
@@ -32,8 +32,8 @@ const styles = {
 
 export default function Home() {
   // HANDLE EVENTS FOR PAGE/ICON CHANGES
-  const [value, setValue] = React.useState("recents");
-  const [currentPage, setCurrentPage] = React.useState("Home");
+  const [value, setValue] = useState("recents");
+  const [currentPage, setCurrentPage] = useState("Home");
   const handlePageChange = (page) => setCurrentPage(page);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -115,9 +115,10 @@ export default function Home() {
 
         {/* CONTENT RENDER */}
       {renderPage()}
+      <Footer />
       </div>
 
-      
+     
     </div>
   );
 
