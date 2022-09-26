@@ -1,12 +1,21 @@
 import logo from "../images/mleftwich.png";
-import { useMediaQuery } from "react-responsive";
 import { Box } from "@mui/material";
 import * as React from "react";
-import BottomNavigation from "./nav";
+//import BottomNavigation from "./nav";
+
+import { Index } from "./content/home";
+import About from "./content/about";
+import Contact from "./content/contact";
+import Projects from "./content/projects";
+
+// NAV IMPORTS
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import ContactIcon from "@mui/icons-material/PhoneAndroid";
+import HomeIcon from "@mui/icons-material/Home";
+import AboutIcon from "@mui/icons-material/PersonPin";
+import ProjectsIcon from "@mui/icons-material/Filter";
 import { useState } from "react";
-import  About  from "./content/about"
-import  Contact  from "./content/contact"
-import  Projects  from "./content/projects"
 
 // INLINE STYLES
 const styles = {
@@ -22,32 +31,70 @@ const styles = {
 };
 
 export default function Home() {
-  
-  const [currentPage, setCurrentPage] = useState('Home');
+  // HANDLE EVENTS FOR PAGE/ICON CHANGES
+  const [value, setValue] = React.useState("recents");
+  const [currentPage, setCurrentPage] = React.useState("Home");
+  const handlePageChange = (page) => setCurrentPage(page);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // FUNCTION TO RENDER CURRENT PAGE FROM HANDLE EVENTS
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
-    if (currentPage === 'About') {
+    if (currentPage === "Home") {
+      return <Index />;
+    } else if (currentPage === "About") {
       return <About />;
-    }
-    if (currentPage === 'Projects') {
+    } else if (currentPage === "Projects") {
       return <Projects />;
-    }
-    if (currentPage === 'Contact') {
+    } else if (currentPage === "Contact") {
       return <Contact />;
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
-  
+  // RENDER PAGES
   return (
+    // CONTAINERS
     <div style={styles.div}>
       <div className={styles.nav}>
-        <BottomNavigation />
 
+
+        {/* NAVIGATION */}
+        <BottomNavigation
+          sx={{
+            width: { xs: 300, sm: 400, md: 500, lg: 590, xl: 670 },
+            borderRadius: 3,
+          }}
+          value={value}
+          onChange={handleChange}
+        >
+          <BottomNavigationAction
+            label="Home"
+            value="Home"
+            icon={<HomeIcon />}
+            onClick={() => handlePageChange("Home")}
+          />
+          <BottomNavigationAction
+            label="About"
+            value="About"
+            icon={<AboutIcon />}
+            onClick={() => handlePageChange("About")}
+          />
+          <BottomNavigationAction
+            label="Projects"
+            value="Projects"
+            icon={<ProjectsIcon />}
+            onClick={() => handlePageChange("Projects")}
+          />
+          <BottomNavigationAction
+            label="Contact"
+            value="Contact"
+            icon={<ContactIcon />}
+            onClick={() => handlePageChange("Contact")}
+          />
+        </BottomNavigation>
+
+        {/* LOGO RENDER */}
         <Box
           component="img"
           sx={{
@@ -65,7 +112,12 @@ export default function Home() {
           alt="Provider icon"
           src={logo}
         />
+
+        {/* CONTENT RENDER */}
+      {renderPage()}
       </div>
+
+      
     </div>
   );
 
