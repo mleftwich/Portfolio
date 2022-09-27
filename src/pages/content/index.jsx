@@ -1,4 +1,3 @@
-import { findByLabelText } from "@testing-library/react";
 import * as React from "react";
 import { Box } from "@mui/system";
 const styles = {
@@ -12,21 +11,29 @@ const styles = {
         textAlign: 'center',
     },
     bodytext: {
-        fontFamily: 'Bellefair, serif',
-        fontSize: '1rem',
+        fontFamily: 'Poiret One, cursive', 
+        textAlign: 'center',
+        color: '#3bbbe0',
+      },
+      name: {
+        fontFamily: "Bellefair, serif",
         color: 'grey',
         textAlign: 'center',
-      },
+      }
+     
      
 }
+
+// LANDING
 export function Index() {
     return (
-        <Box sx={{ width: { xs: 300, sm: 400, md: 500, lg: 590, xl: 670 }, backgroundColor: 'rgb(255, 255, 255, 0.9)', borderRadius: 3}}>
+        <Box sx={{ width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 }, backgroundColor: 'rgb(255, 255, 255, 0.6)', borderRadius: 3}}>
         <div style={styles.home} className="container">
           
-            <h2 style={styles.text}>Everybody Has Their Story</h2>
-            <h1 style={styles.text}>Everyone Has Their Journey</h1> 
-            <p style={styles.bodytext}>I'm Matt Leftwich - Full-Stack Web Developer, Here To Help Along The Way</p>
+            <h2 style={styles.text}>Here For The Journey</h2>
+           
+            <p style={styles.name}>Matt Leftwich - Full Stack Web Developer</p>
+           
             </div>
             </Box>
     )

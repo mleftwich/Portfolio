@@ -1,11 +1,7 @@
 import { Box } from "@mui/system";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import * as React from "react";
-import resume from "../../assets/Resume(2022).pdf";
+
 import pic from "../../images/profile.jpg";
 
 const styles = {
@@ -22,6 +18,7 @@ const styles = {
   bodytext: {
     fontFamily: "Bellefair, serif",
     fontSize: "1.3rem",
+    textAlign: "center",
   },
   picbox: {
     display: "flex",
@@ -46,23 +43,20 @@ export default function About() {
     <div>
       
         
-      <div style={styles.about} className="container">
-  
-        <h1 style={styles.text}>About</h1>
-      </div>
-      
+
       
     
       <div className="container">
        
         <Box
           sx={{
-            width: { xs: 300, sm: 400, md: 500, lg: 590, xl: 670 },
-            backgroundColor: "rgb(255, 255, 255, 0.9)",
+            width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 },
+            backgroundColor: "rgb(255, 255, 255, 0.88)",
             borderRadius: 3,
             transition: "ease in",
           }}
         >
+          <h2 style={styles.text}>About Me</h2>
           <p style={styles.bodytext}>
             Matthew Leftwich - Innovative web solutions - shift left to go
             right. Full stack web-developer/lateral thinker with a background in

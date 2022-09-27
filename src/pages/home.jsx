@@ -62,7 +62,7 @@ export default function Home() {
         {/* NAVIGATION */}
         <BottomNavigation
           sx={{
-            width: { xs: 300, sm: 400, md: 500, lg: 590, xl: 670 },
+            width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 },
             borderRadius: 3,
           }}
           value={value}
@@ -99,8 +99,8 @@ export default function Home() {
           component="img"
           sx={{
             width: {
-              xs: 300,
-              sm: 400,
+              xs: 370,
+              sm: 450,
               md: 500,
               lg: 595,
               xl: 670,
@@ -108,6 +108,7 @@ export default function Home() {
 
             borderRadius: 3,
             boxShadow: 3,
+            opacity: .95
           }}
           alt="Provider icon"
           src={logo}

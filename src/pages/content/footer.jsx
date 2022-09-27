@@ -1,3 +1,4 @@
+// ICONS AND LAYOUT IMPORTS
 import { Box } from "@mui/system";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -15,11 +16,12 @@ const styles = {
     }
   };
 
+  // FOOTER
 export default function Footer() {
     return (
      
         <div className="container">
-      <Box sx={{ width: { xs: 300, sm: 400, md: 500, lg: 590, xl: 670 }, backgroundColor: 'rgb(255, 255, 255, 0.9)', borderRadius: 3, transition: "ease in"}}>
+      <Box sx={{ width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 }, backgroundColor: 'rgb(255, 255, 255, 0.9)', borderRadius: 3, transition: "ease in"}}>
       <div style={styles.btngroup} className="container">
        <ButtonGroup variant="text" aria-label="text button group">
 
