@@ -34,20 +34,13 @@ const styles = {
     borderWidth: "2px",
     borderColor: "black",
     borderStyle: "dotted",
-    margin: '10px',
+    margin: "10px",
   },
 };
 export default function About() {
   return (
-    
     <div>
-      
-        
-
-      
-    
       <div className="container">
-       
         <Box
           sx={{
             width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 },
@@ -85,7 +78,7 @@ export default function About() {
             within a team or individually.
           </p>
           <div style={styles.picbox}>
-          <img src={pic} style={styles.pic} alt="Profile" />
+            <img src={pic} style={styles.pic} alt="Profile" />
           </div>
         </Box>
       </div>

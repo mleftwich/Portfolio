@@ -2,15 +2,11 @@ import * as React from "react";
 import { Box } from "@mui/material";
 // IMPORTS FOR FORM
 import { useState } from "react";
-import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import Slider from "@mui/material/Slider";
+import emailjs from "@emailjs/browser";
 import Button from "@mui/material/Button";
+
+
 
 const styles = {
   body: {
@@ -37,25 +33,62 @@ const styles = {
   },
 };
 
+// CONTACT PAGE
 export default function Contact() {
-  {/* INITIALIZING DEFAULT FORM VALUES */}
-    const defaultValues = {
+  /* INITIALIZING DEFAULT FORM VALUES */
+
+  const defaultValues = {
     name: "",
     email: "",
     message: "",
   };
 
-  {/* CONTROL STATE */}
-  const [formValues, setFormValues] = useState(defaultValues);
+  // FUNCTION TO SEND EMAIL
+  function Email(name, email, message) {
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    const key = "WxkQ-MCMatvvcNM1s";
 
-  {/* HANDLE CHANGE */}
-  const handleInputChange = (e) => {
+    emailjs
+      .send("service_nal7a9j", "template_wj34n35", templateParams, key)
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          showResult(true);
+        },
+        function (err) {
+          console.log("FAILED...", err);
+        }
+      );
+  }
+
+  
+  /* CONTROL STATE */
+  const [formValues, setFormValues] = useState(defaultValues);
+  const [response, showResult] = useState(false);
+  
+    /* HANDLE CHANGE ON FROM INPUT */
+   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValues({
       ...formValues,
       [name]: value,
     });
   };
+  // FUNCTION TO SHOW SUCCESSFUL EMAIL
+  function Response() {
+    return (
+      <div>
+        <p style={styles.bodytext}>Your message has been sent.</p>
+      </div>
+    );
+  }
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
 
   return (
     // LAYOUT BOX AND WRAPPER
@@ -105,18 +138,21 @@ export default function Contact() {
             rows={5}
           />
         </div>
-        
+
         {/* SUBMIT BUTTON */}
         <div style={styles.body}>
           <Button
             variant="outlined"
             style={styles.input}
-            onClick={console.log(formValues)}
+            onClick={() =>
+              Email(formValues.name, formValues.email, formValues.message)
+            }
           >
             Send
           </Button>
         </div>
       </Box>
+      {response ? <Response /> : null}
     </div>
   );
 }
