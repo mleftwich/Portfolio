@@ -2,20 +2,21 @@ import logo from "../images/mleftwich.png";
 import { Box } from "@mui/material";
 import * as React from "react";
 //import BottomNavigation from "./nav";
-
 import { Index } from "./content";
 import About from "./content/about";
 import Contact from "./content/contact";
 import Projects from "./content/projects";
-
+import Resume from "./content/resume";
 // NAV IMPORTS
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import ContactIcon from "@mui/icons-material/PhoneAndroid";
+import ContactIcon from '@mui/icons-material/Help';
 import HomeIcon from "@mui/icons-material/Home";
-import AboutIcon from "@mui/icons-material/PersonPin";
+import AboutIcon from '@mui/icons-material/AccountCircle';
 import ProjectsIcon from "@mui/icons-material/Filter";
 import { useState } from "react";
+import DescriptionIcon from '@mui/icons-material/Description';
+
 import Footer from './content/footer'
 // INLINE STYLES
 const styles = {
@@ -45,10 +46,12 @@ export default function Home() {
       return <Index />;
     } else if (currentPage === "About") {
       return <About />;
-    } else if (currentPage === "Projects") {
+    } else if (currentPage === "Portfolio") {
       return <Projects />;
     } else if (currentPage === "Contact") {
       return <Contact />;
+    } else if (currentPage === "Resume") {
+      return <Resume />;
     }
   };
 
@@ -81,10 +84,16 @@ export default function Home() {
             onClick={() => handlePageChange("About")}
           />
           <BottomNavigationAction
-            label="Projects"
-            value="Projects"
+            label="Portfolio"
+            value="Portfolio"
             icon={<ProjectsIcon />}
-            onClick={() => handlePageChange("Projects")}
+            onClick={() => handlePageChange("Portfolio")}
+          />
+          <BottomNavigationAction
+            label="Resume"
+            value="Resume"
+            icon={<DescriptionIcon />}
+            onClick={() => handlePageChange("Resume")}
           />
           <BottomNavigationAction
             label="Contact"
@@ -92,6 +101,7 @@ export default function Home() {
             icon={<ContactIcon />}
             onClick={() => handlePageChange("Contact")}
           />
+          
         </BottomNavigation>
 
         {/* LOGO RENDER */}
