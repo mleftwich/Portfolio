@@ -25,6 +25,7 @@ const styles = {
   btn: {
     margin: "1rem",
   },
+ 
 };
 
 export default function Projects() {
@@ -73,9 +74,9 @@ export default function Projects() {
           }}
         >
           <div style={styles.body}>
-            <h2 style={styles.text}>Projects</h2>
-          </div>
-
+            
+            </div>
+           
           <div style={styles.body} className="container">
             <Button
               onClick={() => handlePageChangeDown(currentPage)}

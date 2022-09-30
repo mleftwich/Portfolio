@@ -1,19 +1,24 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/1.png";
+import screenshot from "../../images/projects/3.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
+import { borderRadius } from "@mui/system";
+
+
+
 const styles = {
   body: {
     display: "flex",
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Poiret One, cursive",
+    fontFamily: "Share, cursive",
     textAlign: "center",
-    color: "#3bbbe0",
+    color: "rgba(0, 0, 0, 0.6",
+    fontWeight: "bold",
   },
   btn: {
     margin: "1rem",
@@ -23,41 +28,44 @@ const styles = {
     fontSize: "1.3rem",
     textAlign: "center",
   },
+  languages: {
+    fontFamily: "Share, cursive",
+    textAlign: 'center',
+    color: "rgba(0, 0, 0, 0.4",
+  }
 };
 
-export default function Project1() {
+export default function Project3() {
   return (
     <div>
       <div className="container">
-        <h3 style={styles.text}>Project 1</h3>
-        <p style={styles.bodytext}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit
-          porro vitae dolor fuga vero inventore maiores soluta? Provident libero
-          perspiciatis, similique corporis voluptas voluptatem quidem qui
-          sapiente aut eius!
-        </p>
+      <h2 style={styles.text}>Tech Takes</h2>
+      <p style={styles.languages}>HTML // CSS // JS // NODE.JS</p>
         <div style={styles.body} className="container">
           <Box
             component="img"
             sx={{
               width: {
-                xs: 200,
-                sm: 250,
-                md: 275,
-                lg: 400,
-                xl: 450,
+                xs: 150,
+                sm: 150,
+                md: 200,
+                lg: 250,
+                xl: 250,
               },
-              opacity: 0.6,
-              borderRadius: 3,
-              border: "solid",
-              borderColor: "rgba(0, 0, 0, 0.3)",
-              padding: "2px",
+              opacity: 0.7,
+              borderRadius: 100,
+              
+              padding: "1px",
               borderWidth: "1px",
+            
             }}
             alt="Project 1 Image"
             src={screenshot}
           />
         </div>
+        <p style={styles.bodytext}>
+        A simple blog website modeled around the tech world, but easily changed to fit anything. It has full functionality to login or create new users, and add, edit or delete blog posts, with the ability to add comments on individual blogs.
+        </p>
       </div>
       <div style={styles.body} className="container">
         <ButtonGroup
@@ -66,14 +74,14 @@ export default function Project1() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="http://github.shiftleft.net.au"
+            href="https://github.com/mleftwich/TechTakes"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="http://github.shiftleft.net.au"
+            href="http://tech-takes.herokuapp.com/"
             target="_blank"
             startIcon={<LanguageIcon />}
           >

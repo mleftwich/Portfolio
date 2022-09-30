@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 
 import * as React from "react";
 
-import pic from "../../images/profile.jpg";
+import pic from "../../images/profile.png";
 
 const styles = {
   about: {
