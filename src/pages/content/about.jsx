@@ -10,13 +10,13 @@ const styles = {
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Poiret One, cursive",
+    fontFamily: "Share, cursive",
     textAlign: "center",
-    color: "black",
-    opacity: 1,
+    color: "rgba(0, 0, 0, 0.6",
+    fontWeight: "bold",
   },
   bodytext: {
-    fontFamily: "Bellefair, serif",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     fontSize: "1.3rem",
     textAlign: "center",
   },
@@ -30,11 +30,8 @@ const styles = {
     top: "10rem",
     borderRadius: "200px",
     opacity: "90%",
-    padding: "5px",
-    borderWidth: "2px",
-    borderColor: "black",
-    borderStyle: "dotted",
-    margin: "10px",
+    border: "1px solid rgba(0, 0, 0, 0.2)",
+    padding: "2px",
   },
 };
 export default function About() {

@@ -16,7 +16,7 @@ const styles = {
     color: "#3bbbe0",
   },
   name: {
-    fontFamily: "Bellefair, serif",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     color: "grey",
     textAlign: "center",
     fontSize: "1.3rem",

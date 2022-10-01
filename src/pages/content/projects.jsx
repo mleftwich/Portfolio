@@ -25,7 +25,6 @@ const styles = {
   btn: {
     margin: "1rem",
   },
- 
 };
 
 export default function Projects() {
@@ -35,15 +34,15 @@ export default function Projects() {
   // PAGE UP
   const handlePageChangeUp = (page) => {
     if (page < 5) {
-    const newPage = page + 1;
-    setCurrentPage(newPage);
+      const newPage = page + 1;
+      setCurrentPage(newPage);
     }
   };
   // PAGE DOWN
   const handlePageChangeDown = (page) => {
     if (page > 1) {
-    const newPage = page - 1;
-    setCurrentPage(newPage);
+      const newPage = page - 1;
+      setCurrentPage(newPage);
     }
   };
 
@@ -73,10 +72,8 @@ export default function Projects() {
             transition: "ease in",
           }}
         >
-          <div style={styles.body}>
-            
-            </div>
-           
+          <div style={styles.body}></div>
+
           <div style={styles.body} className="container">
             <Button
               onClick={() => handlePageChangeDown(currentPage)}

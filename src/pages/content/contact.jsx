@@ -6,21 +6,19 @@ import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
 import Button from "@mui/material/Button";
 
-
-
 const styles = {
   body: {
     display: "flex",
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Poiret One, cursive",
+    fontFamily: "Share, cursive",
     textAlign: "center",
-    color: "black",
-    opacity: 1,
+    color: "rgba(0, 0, 0, 0.6",
+    fontWeight: "bold",
   },
   bodytext: {
-    fontFamily: "Bellefair, serif",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     fontSize: "1.3rem",
     textAlign: "center",
   },
@@ -36,6 +34,7 @@ const styles = {
 // CONTACT PAGE
 export default function Contact() {
   /* INITIALIZING DEFAULT FORM VALUES */
+
 
   const defaultValues = {
     name: "",
@@ -65,19 +64,20 @@ export default function Contact() {
       );
   }
 
-  
   /* CONTROL STATE */
   const [formValues, setFormValues] = useState(defaultValues);
   const [response, showResult] = useState(false);
-  
-    /* HANDLE CHANGE ON FROM INPUT */
-   const handleInputChange = (e) => {
+
+  /* HANDLE CHANGE ON FROM INPUT */
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormValues({
       ...formValues,
       [name]: value,
     });
   };
+  
+ 
   // FUNCTION TO SHOW SUCCESSFUL EMAIL
   function Response() {
     return (
@@ -109,11 +109,12 @@ export default function Contact() {
             id="name-input"
             name="name"
             label="Your Name"
+            required
             type="text"
             value={formValues.name}
             onChange={handleInputChange}
             style={styles.input}
-          />
+           />
 
           <TextField
             id="email-input"

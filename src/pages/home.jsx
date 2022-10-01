@@ -10,14 +10,14 @@ import Resume from "./content/resume";
 // NAV IMPORTS
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import ContactIcon from '@mui/icons-material/Help';
+import ContactIcon from "@mui/icons-material/Help";
 import HomeIcon from "@mui/icons-material/Home";
-import AboutIcon from '@mui/icons-material/AccountCircle';
+import AboutIcon from "@mui/icons-material/AccountCircle";
 import ProjectsIcon from "@mui/icons-material/Filter";
 import { useState } from "react";
-import DescriptionIcon from '@mui/icons-material/Description';
+import DescriptionIcon from "@mui/icons-material/Description";
 
-import Footer from './content/footer'
+import Footer from "./content/footer";
 // INLINE STYLES
 const styles = {
   div: {
@@ -28,6 +28,9 @@ const styles = {
   nav: {
     display: "flex",
     justifyContent: "center",
+  },
+  iconText: {
+    fontFamily: "Share, cursive",
   },
 };
 
@@ -60,13 +63,12 @@ export default function Home() {
     // CONTAINERS
     <div style={styles.div}>
       <div className={styles.nav}>
-
-
         {/* NAVIGATION */}
         <BottomNavigation
           sx={{
             width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 },
             borderRadius: 3,
+            '& .MuiBottomNavigationAction-label': { fontFamily: 'Share, cursive' }
           }}
           value={value}
           onChange={handleChange}
@@ -101,7 +103,6 @@ export default function Home() {
             icon={<ContactIcon />}
             onClick={() => handlePageChange("Contact")}
           />
-          
         </BottomNavigation>
 
         {/* LOGO RENDER */}
@@ -118,18 +119,16 @@ export default function Home() {
 
             borderRadius: 3,
             boxShadow: 3,
-            opacity: .95
+            opacity: 0.95,
           }}
           alt="Provider icon"
           src={logo}
         />
 
         {/* CONTENT RENDER */}
-      {renderPage()}
-      <Footer />
+        {renderPage()}
+        <Footer />
       </div>
-
-     
     </div>
   );
 

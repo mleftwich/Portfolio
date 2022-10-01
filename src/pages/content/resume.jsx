@@ -37,15 +37,15 @@ export default function Resume() {
               component="img"
               sx={{
                 width: {
-                  xs: 370,
-                  sm: 450,
-                  md: 500,
-                  lg: 595,
-                  xl: 670,
+                  xs: 275,
+                  sm: 300,
+                  md: 350,
+                  lg: 350,
+                  xl: 400,
                 },
                 opacity: 0.88,
               }}
-              alt="Provider icon"
+              alt="Proficincies"
               src={languages}
             />
           </div>

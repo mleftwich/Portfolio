@@ -18,10 +18,11 @@ const styles = {
   btn: {
     margin: "1rem",
   },
-  bodytext: {
-    fontFamily: "Bellefair, serif",
-    fontSize: "1.3rem",
+  languages: {
+    fontFamily: "Share, cursive",
     textAlign: "center",
+    fontSize: '.9rem',
+    color: 'gray',
   },
 };
 
