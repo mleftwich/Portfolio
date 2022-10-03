@@ -11,7 +11,8 @@ import Project3 from "../projects/3";
 import Project4 from "../projects/4";
 import Project5 from "../projects/5";
 import Project6 from "../projects/6";
-
+import Project7 from "../projects/7";
+import Project8 from "../projects/8";
 const styles = {
   body: {
     display: "flex",
@@ -34,7 +35,7 @@ export default function Projects() {
 
   // PAGE UP
   const handlePageChangeUp = (page) => {
-    if (page < 6) {
+    if (page < 8) {
       const newPage = page + 1;
       setCurrentPage(newPage);
     }
@@ -61,6 +62,10 @@ export default function Projects() {
       return <Project5 />;
     } else if (currentPage === 6) {
       return <Project6 />;
+    } else if (currentPage === 7) {
+      return <Project7 />;
+    } else if (currentPage === 8) {
+      return <Project8 />;
     }
   };
 

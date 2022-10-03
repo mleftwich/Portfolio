@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/7.png";
+import screenshot from "../../images/projects/8.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -34,17 +34,19 @@ const styles = {
   },
 };
 
-export default function Project7() {
+export default function Project8() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Take Note</h1>
+        <h1 style={styles.text}>Work Day Scheduler</h1>
 
         <p style={styles.bodytext}>
-         This is an application designed to make taking and organising notes simple and efficient.
+          A simple day planner to help better organize your shedule. Add notes
+          on what needs doing throughout the day. Time passed is shown in gray,
+          current time is red, and future green.
         </p>
         <div style={styles.body} className="container">
-          <a href="https://leftytakesnote.herokuapp.com/">
+          <a href="https://mleftwich.github.io/Scheduler/">
             <Box
               component="img"
               sx={{
@@ -78,14 +80,14 @@ export default function Project7() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="https://github.com/mleftwich/TakeNote"
+            href="https://github.com/mleftwich/Scheduler"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="https://leftytakesnote.herokuapp.com/"
+            href="https://mleftwich.github.io/Scheduler/"
             target="_blank"
             startIcon={<LanguageIcon />}
           >
