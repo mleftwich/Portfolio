@@ -13,7 +13,7 @@ const styles = {
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Share, cursive",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     textAlign: "center",
     color: "rgba(0, 0, 0, 0.6",
     fontWeight: "bold",
@@ -38,7 +38,7 @@ export default function Project2() {
   return (
     <div>
       <div className="container">
-        <h2 style={styles.text}>Inspired Eats</h2>
+        <h1 style={styles.text}>Inspired Eats</h1>
 
         <p style={styles.bodytext}>
           Provides food for thought in the way of a quirky quote and generates a

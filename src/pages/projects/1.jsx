@@ -13,7 +13,7 @@ const styles = {
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Share, cursive",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     textAlign: "center",
     color: "rgba(0, 0, 0, 0.6",
     fontWeight: "bold",
@@ -38,7 +38,7 @@ export default function Project1() {
   return (
     <div>
       <div className="container">
-        <h2 style={styles.text}>PayUp</h2>
+        <h1 style={styles.text}>PayUp</h1>
 
         <p style={styles.bodytext}>
           PayUp! is an app designed to allow users to quickly and simply
@@ -72,7 +72,7 @@ export default function Project1() {
         <div style={styles.body}>
           <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
         </div>
-        <p style={styles.languages}>HTML // CSS // JS // NODE.JS</p>
+        <p style={styles.languages}>HTML // CSS // JS // NODE.JS // SEQUELIZE // HANDLEBARS</p>
       </div>
       <div style={styles.body} className="container">
         <ButtonGroup

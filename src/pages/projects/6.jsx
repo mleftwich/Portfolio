@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/6.png";
+import screenshot from "../../images/projects/4.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -29,8 +29,8 @@ const styles = {
   languages: {
     fontFamily: "Share, cursive",
     textAlign: "center",
-    color: "rgba(0, 0, 0, 0.4)",
     fontSize: ".9rem",
+    color: "gray",
   },
 };
 
@@ -38,18 +38,16 @@ export default function Project6() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Employee Profiler</h1>
-
+        <h1 style={styles.text}>Weather Dashboard</h1>
         <p style={styles.bodytext}>
-          CLI Application to generate a HTML page based on user input provided in
-          the terminal. Using node.js and the inquirer, express, and filesystem
-          dependencies user runs the application and receives prompts to enter
-          user information to render a formatted HTML document with the relevant data.
-          View demonstration
-          <br /><Button variant="outlined" size="small" href="https://drive.google.com/file/d/1d_rC9T7u5VgOmP0RMNBZq2tVw5yNGSzS/view">here</Button>
+          A website that makes organizing a trip easier with a full 5 day
+          forecast. Search for a city and get it's current weather conditions,
+          including temp, conditions, humidity, wind speed and UV rating, and
+          the expected forecast for the next 5 days.
         </p>
+
         <div style={styles.body} className="container">
-          <a href="https://drive.google.com/file/d/1d_rC9T7u5VgOmP0RMNBZq2tVw5yNGSzS/view">
+          <a href="https://mleftwich.github.io/WeatherForecast/">
             <Box
               component="img"
               sx={{
@@ -65,18 +63,17 @@ export default function Project6() {
                 border: "1px solid rgba(0, 0, 0, 0.2)",
                 padding: "2px",
                 borderWidth: "1px",
-                filter: "grayscale(100%)",
               }}
               alt="Project 1 Image"
               src={screenshot}
             />
           </a>
         </div>
-        <div style={styles.body}>
-          <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
-        </div>
-        <p style={styles.languages}>HTML // JQUERY // NODE.JS</p>
       </div>
+      <div style={styles.body}>
+        <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
+      </div>
+      <p style={styles.languages}>HTML // CSS // JS // JQUERY </p>
       <div style={styles.body} className="container">
         <ButtonGroup
           variant="outlined"
@@ -84,14 +81,14 @@ export default function Project6() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="https://github.com/mleftwich/TeamProfiler"
+            href="https://github.com/mleftwich/WeatherForecast"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="https://drive.google.com/file/d/1d_rC9T7u5VgOmP0RMNBZq2tVw5yNGSzS/view"
+            href="https://mleftwich.github.io/WeatherForecast/"
             target="_blank"
             startIcon={<LanguageIcon />}
           >

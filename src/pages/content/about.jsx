@@ -10,7 +10,7 @@ const styles = {
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Share, cursive",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     textAlign: "center",
     color: "rgba(0, 0, 0, 0.6",
     fontWeight: "bold",
@@ -46,7 +46,7 @@ export default function About() {
             transition: "ease in",
           }}
         >
-          <h2 style={styles.text}>About Me</h2>
+          <h1 style={styles.text}>About Me</h1>
           <p style={styles.bodytext}>
             Matthew Leftwich - Innovative web solutions - shift left to go
             right. Full stack web-developer/lateral thinker with a background in

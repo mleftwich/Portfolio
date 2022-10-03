@@ -37,7 +37,7 @@ const styles = {
 export default function Home() {
   // HANDLE EVENTS FOR PAGE/ICON CHANGES
   const [value, setValue] = useState("recents");
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About");
   const handlePageChange = (page) => setCurrentPage(page);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -68,7 +68,10 @@ export default function Home() {
           sx={{
             width: { xs: 370, sm: 450, md: 500, lg: 595, xl: 670 },
             borderRadius: 3,
-            '& .MuiBottomNavigationAction-label': { fontFamily: 'Share, cursive' }
+            "& .MuiBottomNavigationAction-label": {
+              fontFamily: "Smooch Sans, sans-serif",
+              fontSize: "1rem",
+            },
           }}
           value={value}
           onChange={handleChange}

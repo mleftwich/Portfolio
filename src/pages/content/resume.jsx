@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box } from "@mui/material";
 import Button from "@mui/material/Button";
-import resume from "../../assets/Resume(2022).pdf";
+import resume from "../../assets/Resume(standard).pdf";
 import DescriptionIcon from "@mui/icons-material/Description";
 import languages from "../../images/languages.png";
 const styles = {

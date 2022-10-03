@@ -13,7 +13,7 @@ const styles = {
     justifyContent: "center",
   },
   text: {
-    fontFamily: "Share, cursive",
+    fontFamily: "Saira Extra Condensed, sans-serif",
     textAlign: "center",
     color: "rgba(0, 0, 0, 0.6",
     fontWeight: "bold",
@@ -38,7 +38,7 @@ export default function Project3() {
   return (
     <div>
       <div className="container">
-        <h2 style={styles.text}>Tech Takes</h2>
+        <h1 style={styles.text}>Tech Takes</h1>
         <p style={styles.bodytext}>
           A simple blog website modeled around the tech world, but easily
           changed to fit anything. It has full functionality to login or create
@@ -72,7 +72,7 @@ export default function Project3() {
         <div style={styles.body}>
           <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
         </div>
-        <p style={styles.languages}>HTML // CSS // JS // NODE.JS</p>
+        <p style={styles.languages}>HTML // CSS // JS // NODE.JS // SEQUELIZE // HANDLEBARS </p>
       </div>
       <div style={styles.body} className="container">
         <ButtonGroup
