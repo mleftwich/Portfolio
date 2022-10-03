@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import resume from "../../assets/Resume(standard).pdf";
 import DescriptionIcon from "@mui/icons-material/Description";
 import languages from "../../images/languages.png";
+import db from "../../images/db.png";
 const styles = {
   body: {
     display: "flex",
@@ -49,7 +50,23 @@ export default function Resume() {
               src={languages}
             />
           </div>
-
+          <div style={styles.body}>
+            <Box
+              component="img"
+              sx={{
+                width: {
+                  xs: 150,
+                  sm: 150,
+                  md: 200,
+                  lg: 250,
+                  xl: 250,
+                },
+                opacity: 0.88,
+              }}
+              alt="Proficincies"
+              src={db}
+            />
+          </div>
           <div style={styles.body}>
             <Button
               variant="outlined"

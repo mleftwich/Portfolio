@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/7.png";
+import screenshot from "../../images/projects/12.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -34,17 +34,17 @@ const styles = {
   },
 };
 
-export default function Project7() {
+export default function Project10() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Take Note</h1>
+        <h1 style={styles.text}>Password Generator</h1>
 
         <p style={styles.bodytext}>
-         This is an application designed to make taking and organising notes simple and efficient.
+        Everyones first project - the humble password generator.
         </p>
         <div style={styles.body} className="container">
-          <a href="https://leftytakesnote.herokuapp.com/">
+          <a href="https://mleftwich.github.io/PasswordGenMagic/">
             <Box
               component="img"
               sx={{
@@ -69,7 +69,7 @@ export default function Project7() {
         <div style={styles.body}>
           <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
         </div>
-        <p style={styles.languages}>HTML // CSS // JS // NODE.JS // SEQUELIZE</p>
+        <p style={styles.languages}>HTML // CSS // JS</p>
       </div>
       <div style={styles.body} className="container">
         <ButtonGroup
@@ -78,14 +78,14 @@ export default function Project7() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="https://github.com/mleftwich/TakeNote"
+            href="https://github.com/mleftwich/PasswordGenMagic"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="https://leftytakesnote.herokuapp.com/"
+            href="https://mleftwich.github.io/PasswordGenMagic/"
             target="_blank"
             startIcon={<LanguageIcon />}
           >

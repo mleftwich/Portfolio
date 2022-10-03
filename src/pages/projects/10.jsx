@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/7.png";
+import screenshot from "../../images/projects/10.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -34,17 +34,18 @@ const styles = {
   },
 };
 
-export default function Project7() {
+export default function Project10() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Take Note</h1>
+        <h1 style={styles.text}>E-Commerce Server</h1>
 
         <p style={styles.bodytext}>
-         This is an application designed to make taking and organising notes simple and efficient.
+        Fully functional backend E-Commerce server. Configured endpoints allow CRUD operations using restful API. View demonstration
+        <br /><Button variant="outlined" size="small" href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view">here</Button>
         </p>
         <div style={styles.body} className="container">
-          <a href="https://leftytakesnote.herokuapp.com/">
+          <a href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view">
             <Box
               component="img"
               sx={{
@@ -78,14 +79,14 @@ export default function Project7() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="https://github.com/mleftwich/TakeNote"
+            href="https://github.com/mleftwich/eCommServer"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="https://leftytakesnote.herokuapp.com/"
+            href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view"
             target="_blank"
             startIcon={<LanguageIcon />}
           >
