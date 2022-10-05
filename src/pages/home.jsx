@@ -16,8 +16,9 @@ import AboutIcon from "@mui/icons-material/AccountCircle";
 import ProjectsIcon from "@mui/icons-material/Filter";
 import { useState } from "react";
 import DescriptionIcon from "@mui/icons-material/Description";
-
 import Footer from "./content/footer";
+// HASH ROUTER
+
 // INLINE STYLES
 const styles = {
   div: {
