@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.6976ab3c.css",
+    "main.js": "/portfolio/static/js/main.62924a90.js",
+    "static/media/mountains.png": "/portfolio/static/media/mountains.b86ffd010e84b22f6535.png",
+    "static/media/profile.png": "/portfolio/static/media/profile.206ef1918bc84a863c88.png",
+    "static/media/Resume(standard).pdf": "/portfolio/static/media/Resume(standard).05bb0fb60c30a886e60e.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.6976ab3c.css.map": "/portfolio/static/css/main.6976ab3c.css.map",
+    "main.62924a90.js.map": "/portfolio/static/js/main.62924a90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6976ab3c.css",
+    "static/js/main.62924a90.js"
+  ]
+}
