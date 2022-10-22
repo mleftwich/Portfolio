@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 // IMPORT PROJECTS
+import Project0 from "../projects/0";
 import Project1 from "../projects/1";
 import Project2 from "../projects/2";
 import Project3 from "../projects/3";
@@ -36,7 +37,7 @@ const styles = {
 
 export default function Projects() {
   // HANDLE CHANGE FUNCTIONS
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
 
   // PAGE UP
   const handlePageChangeUp = (page) => {
@@ -47,7 +48,7 @@ export default function Projects() {
   };
   // PAGE DOWN
   const handlePageChangeDown = (page) => {
-    if (page > 1) {
+    if (page > 0) {
       const newPage = page - 1;
       setCurrentPage(newPage);
     }
@@ -55,7 +56,9 @@ export default function Projects() {
 
   // FUNCTION TO RETURN CORRECT PROJECT
   const renderPage = () => {
-    if (currentPage === 1) {
+    if (currentPage === 0) {
+      return <Project0 />;
+    } else if (currentPage === 1) {
       return <Project1 />;
     } else if (currentPage === 2) {
       return <Project2 />;

@@ -38,7 +38,7 @@ const styles = {
 export default function Home() {
   // HANDLE EVENTS FOR PAGE/ICON CHANGES
   const [value, setValue] = useState("recents");
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("Home");
   const handlePageChange = (page) => setCurrentPage(page);
   const handleChange = (event, newValue) => {
     setValue(newValue);
