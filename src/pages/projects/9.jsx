@@ -1,11 +1,7 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/9.png";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
-import BuildCircleIcon from "@mui/icons-material/BuildCircle";
+import screenshot from "../../images/projects/gh.png";
+
 
 const styles = {
   body: {
@@ -38,14 +34,14 @@ export default function Project9() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Social API</h1>
+        <h1 style={styles.text}>More Work</h1>
 
         <p style={styles.bodytext}>
-        Backend server configured for use with a social network. All end points are functional and allow the options to create users and thoughts, add friends, and react to thoughts. View demonstration
-        <br /><Button variant="outlined" size="small" href="https://drive.google.com/file/d/1_ZbT_gglbIKOSImLODueKwMQUfEyZYFn/view">here</Button>
+        More work and examples available at my GitHub page, for any questions please reach out via the contact section.
+        
         </p>
         <div style={styles.body} className="container">
-          <a href="https://github.com/mleftwich/SocialAPI">
+          <a href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view">
             <Box
               component="img"
               sx={{
@@ -67,33 +63,9 @@ export default function Project9() {
             />
           </a>
         </div>
-        <div style={styles.body}>
-          <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
-        </div>
-        <p style={styles.languages}>HTML // CSS // JS // NODE.JS // MONGOOSE</p>
-      </div>
-      <div style={styles.body} className="container">
-        <ButtonGroup
-          variant="outlined"
-          aria-label="text button group"
-          sx={{ margin: "1rem" }}
-        >
-          <Button
-            href="https://github.com/mleftwich/SocialAPI"
-            target="_blank"
-            startIcon={<GitHubIcon />}
-          >
-            View Repo
-          </Button>
-          <Button
-            href="https://drive.google.com/file/d/1_ZbT_gglbIKOSImLODueKwMQUfEyZYFn/view"
-            target="_blank"
-            startIcon={<LanguageIcon />}
-          >
-            View Project
-          </Button>
-        </ButtonGroup>
-      </div>
+       </div>
+    
+   
     </div>
   );
 }

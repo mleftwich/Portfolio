@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box } from "@mui/material";
-import screenshot from "../../images/projects/8.png";
+import screenshot from "../../images/projects/10.png";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -38,15 +38,14 @@ export default function Project8() {
   return (
     <div>
       <div className="container">
-        <h1 style={styles.text}>Work Day Scheduler</h1>
+        <h1 style={styles.text}>E-Commerce Server</h1>
 
         <p style={styles.bodytext}>
-          A simple day planner to help better organize your shedule. Add notes
-          on what needs doing throughout the day. Time passed is shown in gray,
-          current time is red, and future green.
+        Fully functional backend E-Commerce server. Configured endpoints allow CRUD operations using restful API. View demonstration
+        <br /><Button variant="outlined" size="small" href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view">here</Button>
         </p>
         <div style={styles.body} className="container">
-          <a href="https://mleftwich.github.io/Scheduler/">
+          <a href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view">
             <Box
               component="img"
               sx={{
@@ -71,7 +70,7 @@ export default function Project8() {
         <div style={styles.body}>
           <BuildCircleIcon sx={{ paddingTop: "1rem" }} />
         </div>
-        <p style={styles.languages}>HTML // CSS // JS</p>
+        <p style={styles.languages}>HTML // CSS // JS // NODE.JS // SEQUELIZE</p>
       </div>
       <div style={styles.body} className="container">
         <ButtonGroup
@@ -80,14 +79,14 @@ export default function Project8() {
           sx={{ margin: "1rem" }}
         >
           <Button
-            href="https://github.com/mleftwich/Scheduler"
+            href="https://github.com/mleftwich/eCommServer"
             target="_blank"
             startIcon={<GitHubIcon />}
           >
             View Repo
           </Button>
           <Button
-            href="https://mleftwich.github.io/Scheduler/"
+            href="https://drive.google.com/file/d/1bMHmhgoEOasy-vn-zCpnMp2ROC2BvCbk/view"
             target="_blank"
             startIcon={<LanguageIcon />}
           >
