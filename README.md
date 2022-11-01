@@ -25,7 +25,7 @@
   * Material UI
 
   ## Installation
-   None
+   No installation necessary
 
 
   ## Usage
@@ -37,11 +37,11 @@
 
 
   ## Guidelines
-   None
+   Any queries can be directed to the contact form
 
 
   ## Tests
-   
+   Tests run in development
 
 
   ## License
