@@ -4,6 +4,7 @@
   
   ## Table of Contents
   * [Description](#description)
+  * [Technologies](#technologies)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
@@ -17,6 +18,11 @@
   A Portfolio application to showcase my work and provide information about myself and the services I offer. Created using React and Material the app is fully responsive for most viewports and offers a sleek intuitive design. Features a landing page, about section, a resume section with a link to my downloadable resume and a list of proficiencies, a contact form and the portfolio section that shows a few of the projects I've created or been a part of.
 
   ![screenshot](./screenshot.png)
+
+  ## Technologies
+  * React
+  * JSX
+  * Material UI
 
   ## Installation
    None
